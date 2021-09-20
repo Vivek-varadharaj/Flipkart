@@ -1,0 +1,589 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+
+    body::-webkit-scrollbar{
+        display: none;
+    }
+   
+    
+    .Navigation_Bar{
+        position: fixed;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap; 
+        object-fit: contain; 
+        height: 56px;
+        background-color: #2874f0;
+        z-index: 2;
+        
+        
+        
+    }
+
+    .Search_Box i{
+        color: #2874f0;
+    }
+
+     @media (max-width: 800px){
+        .Navigation_Bar{
+            height: 150px;
+        }
+
+        .Navigation_Bar .Search_Box{
+            height: 30%;
+        }
+
+     .Services{
+            z-index: 3;
+        }
+     }
+    
+    .logo {
+        height: 21%;
+        width: 23%;
+        display: flex;
+        object-fit: contain;
+        padding-left: 15%;
+        flex-direction: column;
+        padding-top: 9px;
+    
+    }
+
+    .MainLogo{
+        width: 88%;
+        cursor: pointer;
+    }
+    .logo a{
+       
+        font-size: 12px;
+        color: white;
+        font-style: italic;
+    }
+
+    .logo span{
+        text-decoration: none;
+        font-size: 12px;
+        color: #ffe500;
+        font-style: italic;
+        
+    }
+.SmallLogo{
+    width: 10px;
+    
+}
+.Explore{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.Search_Box {
+    align-items: center;
+    margin-top: 8px;
+    margin-left: 1%;
+    background-color: rgb(255, 255, 255);
+    height: 70%;
+    width: 459px;
+    display: flex;
+}
+
+.Search_Box i{
+    margin-left: auto;
+    margin-right: 13px;
+    color: #2874f0
+    
+}
+
+.Search_Box input{
+    width:300px ;
+    margin-left: 20px;
+    height: 25px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+}
+
+.NavItems{
+    display: flex;
+    align-items: center;
+    padding-left: 110px;
+    position: relative;
+}
+
+.NavItems svg{
+    transform: rotate(270deg);
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.NavItems p{
+    color: white;
+    font-weight: 600;
+    font-family: Roboto,Arial,sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+.NavItems .More{
+    margin-left: 50px;
+    cursor: pointer;
+}
+#icon{
+    transform: rotate(0deg);
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.vivek:hover #Icon{
+    transform: rotate(180deg);
+}
+
+.Services {
+    height: 142px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding-top: 58px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.images{
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.zZ3yfL{
+    fill: black;
+}
+.carousel{
+    width: 100%;
+    height: 280px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 10px; 
+    display: flex;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    overflow-y: hidden;
+    animation: animate 10s linear infinite;
+    
+
+}
+
+.CarouselImages{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    scroll-snap-type: start;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        left:0%
+    }
+    20%
+    {
+        left: 0%;
+    }
+
+    25%
+    {
+        left: -100%;
+    }
+    
+}
+
+
+.logo img{
+    width: 80px;
+    margin-left: auto;
+}
+
+.Explore{
+    margin-left: auto;
+    font-size: 14px;
+}
+
+.ServiceImages{
+    width: 60px;
+}
+
+.carousel .CarouselImages{
+    width: 100%;
+    scroll-snap-align: start;
+}
+
+.carousel::-webkit-scrollbar{
+    display: none;
+}
+
+.singleImage img{
+    cursor: pointer;
+}
+
+.container1 {
+    padding: 22px;
+    margin-top: 10px;
+    width: 100%;
+    height: 425px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    
+}
+
+.insideContainer{
+    margin-top: 10px;
+    width: 80%;
+    height: 360px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(0 0 0 / 16%);
+   
+}
+
+.offer {
+    margin-top: 10px;
+    width: 20%;
+    height: 359px;
+    background-color: rgb(215, 231, 189);
+    margin-left: 5px;
+}
+
+.clock {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(0 0 0 / 16%);
+}
+
+.viewall {
+    margin-left: auto;
+    height: 72%;
+    width: 12%;
+    margin-right: 2%;
+    background-color: #2874f0;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    font-weight: 600;
+}
+
+.Deals {
+    align-items: center;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    margin-left: 2%;
+    height: 100%;
+    font-size: 21px;
+}
+
+
+.SmallClock {
+    display: flex;
+    margin-left: 3%;
+    height: 30px;
+}
+
+.timer{
+    margin-left: 2%;
+}
+
+.products{
+    
+    height: 290px;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.products::-webkit-scrollbar{
+    display: none;
+}
+
+.products .dealImages {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 20%;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    
+}
+
+
+
+.Dimages{
+    display: flex;
+    object-fit: contain;
+    height: 60%;
+    background-color: rgb(255, 255, 255);
+    padding-top: 2%;
+    
+}
+
+.Dimages .car {
+    width: 100%;
+    height: 147px;
+    width: 139px;
+}
+
+.description {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 17px;
+    font-size: 14px;
+}
+
+.description a {
+    margin-top: 11px;
+    text-decoration: none;
+    color: #388e3c;
+}
+
+.description p{
+    margin-top: 11px;
+}
+
+.description span {
+    color: #0000009e;
+    margin-top: 11px;
+}
+
+.offer img{
+    width: 100%;
+    height: 100%;
+}
+
+.dealImages{
+    width: 100px;
+}
+
+
+
+.Discounts {
+    font-weight: 700;
+    font-family: Roboto,Arial,sans-serif;
+    letter-spacing: 0;
+    font-size: 18px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding-left: 10px;
+    border:1px solid rgb(0 0 0 / 16%);
+}
+.DiscountPics{
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    
+}
+.discount_Container{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(0 0 0 / 16%);
+    margin-left: 20px;
+    overflow-x: scroll;
+}
+
+
+.singleImage img {
+    width: 77px;
+    height: 126px;
+    cursor: pointer;
+}
+
+.singleImage img:hover{
+    transform: scale(1.2);
+}
+
+
+.singleImage {
+    margin-left: -5px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.singleImage a{
+    align-self: center;
+    
+}
+
+.descriptionDiscount {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    padding-top: 30px;
+    font-size: 14px;
+}
+
+.DiscountPics::-webkit-scrollbar{
+    display: none;
+}
+
+.descriptionDiscount a{
+    text-decoration: none;
+    color: #388e3c;
+}
+
+.descriptionDiscount span{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+.discount_Container::-webkit-scrollbar{
+    display: none;
+}
+
+
+.DropDown1 {
+    position: absolute;
+    width: 258px;
+    height: 316px;
+    background-color: rgb(255, 255, 255);
+    top: 56px;
+    right: 94px;
+    text-align: center;
+    padding-top: 10px;
+    /* display: none; */
+    line-height: 30px;
+    box-shadow: 0 0 8px 0 rgb(0 0 0 / 38%);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.Viveks:hover .DropDown1{
+    opacity: 1;
+    /* display: flex; */
+    flex-direction: column;
+    transition: all .5s ease;
+    visibility: visible;
+}
+
+.Viveks {
+    height: 60px;
+    justify-items: center;
+    display: flex;
+    align-items: center;
+}
+.edge {
+    right: 122px;
+    height: 20px;
+    width: 20px;
+    background-color: rgb(255, 255, 255);
+    transform: rotate(45deg);
+    position: absolute;
+    top: -8px;
+}
+
+.Viveks:hover #Icon{
+    transform: rotate(90deg);
+
+}
+
+.DropDown2 {
+    position: absolute;
+    width: 241px;
+    height: 266px;
+    background-color: rgb(255, 255, 255);
+    top: 56px;
+    right: -14px;
+    text-align: center;
+    padding: 10px;
+    /* display: none; */
+    line-height: 30px;
+    box-shadow: 0 0 8px 0 rgb(0 0 0 / 38%);
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+.more{
+    justify-items: center;
+    display: flex;
+    align-items: center;
+    height: 60px;
+       
+}
+
+.edge2 {
+    right: 118px;
+    height: 20px;
+    width: 20px;
+    background-color: rgb(255, 255, 255);
+    transform: rotate(45deg);
+    position: absolute;
+    top: -10px;
+}
+
+.more:hover .DropDown2{
+    opacity: 1;
+    transition: all .5s ease;
+    visibility: visible;
+}
+
+.more:hover #Icon2{
+    transform: rotate(90deg);
+
+}
+.contents {
+    border-bottom: 1px solid #80808026;
+    padding: 10px;
+}
+
+.contents a{
+    text-decoration: none;
+    color: black;
+}
+
+.descriptionDiscount button {
+    height: 20px;
+    margin-top: 5px;
+    width: 44px;
+    font-size: 10px;
+    background-color: green;
+    border: none;
+    color: white;
+    border-radius: 2px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+}
+.button p {
+    color: gray;
+    padding-top: 5px;
+}
+
+footer{
+    padding: 30px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #212121;
+    color: white;
+    
+}
+.footer1{
+    line-height: 30px;
+    font-size: 14px;
+}
+
+
+
+
